@@ -30,6 +30,12 @@ public class AdminController {
 		
 	}
 	
+	@RequestMapping("/adminServices")
+	public ModelAndView showAdminService(){
+		ModelAndView model = new ModelAndView("AdminServices");
+		
+		return model;
+	}
 	
 
 }
