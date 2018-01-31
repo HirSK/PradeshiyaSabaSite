@@ -11,9 +11,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">	
-	
-    
+	<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,7 +38,17 @@
 			<a href="#contact">About Diwulapitiya</a>		
 			
 			<a href="services">Services</a>
-			<a href="projects">Projects</a>
+			<div class="dropdown">
+				<button class="dropbtn">Dropdown
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+			</div>
+	<a href="projects">Projects</a>
 			<a href="#about">Downloads</a>
 			<a href="#about">Your Needs</a>
 			<a href="#about">Photo Gallary</a>
