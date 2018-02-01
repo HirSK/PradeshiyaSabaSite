@@ -381,13 +381,21 @@ span.psw {
 		                        </div>
 	                        </div>
 					        <br>
-					      <div class="form-group">
-	                        <div class="">
-	                          <button class="btn btn-primary" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-	                          <button class="btn btn-primary" type="reset">Reset</button>
-	                          <button type="submit" class="btn btn-success">Submit</button>
-	                        </div>
-                      	</div>
+					         <div class="form-group">
+		                        <label  for="image" class="control-label ">Image
+		                        </label>
+		                        <div class="">
+		                            <input type="file" name="logo" id="logo" class="form-control">
+		                        </div>
+		                    </div>
+		                    <br>
+					        <div class="form-group">
+		                        <div class="">
+		                          <button class="btn btn-primary" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+		                          <button class="btn btn-primary" type="reset">Reset</button>
+		                          <button type="submit" class="btn btn-success">Submit</button>
+		                        </div>
+                      		</div>
 					      
 					    </div>
 
