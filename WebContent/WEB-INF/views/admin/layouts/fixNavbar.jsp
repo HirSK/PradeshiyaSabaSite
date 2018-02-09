@@ -29,20 +29,15 @@
 
 .welcomemsgbox{
 
-          transition: 0.3s;
+         transition: 0.3s;
           width: 100%;
           height: 20%;
           padding: 10px 10px 10px 10px;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+          display: -webkit-fl display: flex;
+          word-wrap: break-word;
           -webkit-align-content: center;
           align-content: center;
           box-shadow:  1px 1px 1px 1px #c3c3c3;
-
-
-
       }
       p{
           align-content: center;
@@ -83,14 +78,20 @@
             	</div>
             	<br><br>
             	 <li>
-                    <a href="#"><i class="fa fa-fw fa-heartbeat"></i> Services</a>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> Welcome Page</a>
+                </li>
+                 <li>
+                    <a href="#"><i class="fa fa-fw fa-umbrella"></i> Services</a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-edit"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-leanpub"></i> About <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-1" class="collapse">
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Diwulapitiya</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Ministers</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Meetings</a></li>
                     </ul>
                 </li>
                 <li>
@@ -101,15 +102,7 @@
                         <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>Services</a>
-                </li>
-                <li>
-                    <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
-                </li>
-                <li>
-                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
-                </li>
+              
             </ul>
         </div>
         <!-- /.navbar-collapse -->
