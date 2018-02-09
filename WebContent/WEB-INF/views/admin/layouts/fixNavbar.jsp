@@ -83,32 +83,50 @@
             	</div>
             	<br><br>
             	 <li>
-                    <a href="#"><i class="fa fa-fw fa-heartbeat"></i> Services</a>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> Welcome Page</a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-star"></i> Projects <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-1" class="collapse">
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Add a project</a></li>
+                        
                     </ul>
                 </li>
                 <li>
-                    <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  MENU 2 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-server"></i> Services <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-2" class="collapse">
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Add a service</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-fw fa-group"></i> People Needs <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-3" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Add a need</a></li>
+                        
                     </ul>
                 </li>
                 <li>
-                    <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i>Services</a>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-4"><i class="fa fa-fw fa-cloud-download"></i> Downloads <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-4" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Add applications</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Add gazettes</a></li>
+                        
+                    </ul>
                 </li>
+                
+               
                 <li>
-                    <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
+                    <a href="sugerencias"><i class="fa fa-fw fa-edit"></i> Edit About Diwulapitiya</a>
                 </li>
+                
                 <li>
-                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                    <a href="faq"><i class="fa fa-fw fa fa-map-marker"></i> Edit Contact Information</a>
+                </li>
+                
+                <li>
+                    <a href="faq"><i class="fa fa-fw fa fa-file-photo-o"></i> Photo Gallery</a>
                 </li>
             </ul>
         </div>
