@@ -7,14 +7,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AdminController {
 	
-	@RequestMapping("/adminservices")	
+	@RequestMapping("/admin/services")	
 	public ModelAndView adminServices(){
 		ModelAndView model = new ModelAndView("admin/AdminServices");
 		
 		return model;
 	}
 	
-	@RequestMapping("/welcome")	
+	@RequestMapping("/admin")	
 	public ModelAndView helloWorld(){
 		ModelAndView model = new ModelAndView("admin/welcomePage");
 		
