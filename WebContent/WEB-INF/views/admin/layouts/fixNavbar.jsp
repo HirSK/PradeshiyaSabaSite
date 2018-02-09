@@ -27,26 +27,7 @@
     /*html, body, #wrapper, #page-wrapper {height: 100%; overflow: hidden;}*/
 }
 
-.welcomemsgbox{
 
-          transition: 0.3s;
-          width: 100%;
-          height: 20%;
-          padding: 10px 10px 10px 10px;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-align-content: center;
-          align-content: center;
-          box-shadow:  1px 1px 1px 1px #c3c3c3;
-
-
-
-      }
-      p{
-          align-content: center;
-      }
   </style>
 </head>
 <body>
@@ -84,12 +65,28 @@
             	<br><br>
             	 <li>
                     <a href="#"><i class="fa fa-fw fa-home"></i> Welcome Page</a>
+<<<<<<< HEAD
                 </li>
                 <li>
                     <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-star"></i> Projects <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-1" class="collapse">
                         <li><a href="#"><i class="fa fa-angle-double-right"></i>Add a project</a></li>
                         
+=======
+                </li>
+                 <li>
+                    <a href="#"><i class="fa fa-fw fa-umbrella"></i> Services</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-edit"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-leanpub"></i> About <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-1" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Diwulapitiya</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Ministers</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Meetings</a></li>
+>>>>>>> 9d32aeba5a4d924404cfb2d6711adc87d6fbe919
                     </ul>
                 </li>
                 <li>
@@ -99,6 +96,7 @@
                         
                     </ul>
                 </li>
+<<<<<<< HEAD
                 
                 <li>
                     <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-fw fa-group"></i> People Needs <i class="fa fa-fw fa-angle-down pull-right"></i></a>
@@ -128,6 +126,9 @@
                 <li>
                     <a href="faq"><i class="fa fa-fw fa fa-file-photo-o"></i> Photo Gallery</a>
                 </li>
+=======
+              
+>>>>>>> 9d32aeba5a4d924404cfb2d6711adc87d6fbe919
             </ul>
         </div>
         <!-- /.navbar-collapse -->
