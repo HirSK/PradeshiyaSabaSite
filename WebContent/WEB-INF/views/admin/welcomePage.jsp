@@ -6,6 +6,26 @@
 	height: 100%;
 	}
 	
+	 .welcomemsgbox{
+
+          transition: 0.3s;
+          width: 100%;
+          height: 20%;
+          padding: 10px 10px 10px 10px;
+          display: -webkit-fl display: flex;
+          word-wrap: break-word;
+          -webkit-align-content: center;
+          align-content: center;
+          box-shadow:  1px 1px 1px 1px #c3c3c3;
+
+
+
+
+      }
+      p{
+          text-align: justify;
+      }
+	
 </style>
        <div id="page-wrapper">
         <div class="container-fluid">
