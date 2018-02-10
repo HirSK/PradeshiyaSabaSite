@@ -18,6 +18,31 @@
 	li{
     margin: 10px 0;
 }
+
+.accordion {
+	background-color: #EDF1F5;
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	padding: 10px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	border: 1px 1px 1px 1px #8496AAs;
+}
 	
 </style>
 </head>
@@ -61,50 +86,49 @@
 		<div class="main-content" >
 			<div class="row">
 				
-				<div class="col-sm-9">
+				<div class="col-sm-8">
 					<div class="welcome-content" style="text-align:center">
-						<h2 class="item-title"><b>Services Providing</b></h2><hr>
-						
-						<!-- services list -->
-						
-						<ul class="nav navbar-nav" style="text-align: left;">
+						<h2 class="item-title"><b>Services</b></h2>
+						<button class="accordion"><b>Removing Trees Endangering the Safety of Persons or Property</b></button>
+						<div class="panel">
+							<img src="${pageContext.request.contextPath}/resources/images/img_mountains_wide.jpg" alt="Mountain View" width="650" height="300">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 
-					        <li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welfare services<span class="glyphicon glyphicon-info-sign pull-right"></span></a>
-					          <ul class="dropdown-menu">
-					            
-					          </ul>
-					        </li>
+						<button class="accordion"><b>Removing Trees Endangering the Safety of Persons or Property</b></button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 
-					        
-					        <li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Health services<span class="glyphicon glyphicon-info-sign pull-right"></span></a>
-					          <ul class="dropdown-menu">
-					            <li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-					            <li class="divider"></li>
-					            <li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
-					            <li class="divider"></li>
-					            <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
-					            <li class="divider"></li>
-					            <li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
-					            <li class="divider"></li>
-					            <li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-					          </ul>
-					        </li>
+						<button class="accordion"><b>Removing Trees Endangering the Safety of Persons or Property</b></button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 
-					  </ul>
-					
-					<!--end of service list  -->
-						
-						
-						
+						<script>
+                            var acc = document.getElementsByClassName("accordion");
+                            var i;
+
+                            for (i = 0; i < acc.length; i++) {
+                                acc[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var panel = this.nextElementSibling;
+                                    if (panel.style.display === "block") {
+                                        panel.style.display = "none";
+                                    } else {
+                                        panel.style.display = "block";
+                                    }
+                                });
+                            }
+						</script>
+
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<div class="news-content" style="text-align:center">
 						<h2 class="item-title"><b>News and Events</b></h2><hr>
 						<p style="text-align: justify">
-						 
+						 Homagama is a town in Colombo District, Western Pragama is a town in Colombo District, Western Province of agama is a town in Colombo Homagama is a town in Colombo District, Western Pragama is a town in Colombo District, Western Province of agama is a town in Colombo DHomagama is a town in Colombo District, Western Pragama is a town in Colombo District, Western Province of agama is a town in Colombo DHomagama is a town in Colombo District, Western Pragama is a town in Colombo District, Western Province of agama is a town in Colombo DDistrict, Western Province of
 						</p>
 					</div>
 				</div>
