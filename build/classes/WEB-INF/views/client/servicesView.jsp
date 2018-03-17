@@ -19,7 +19,7 @@
     margin: 10px 0;
 	}
 	body {margin:0;
-	font-family: 'Tangerine', serif;
+	font-family: serif;
         font-size: 20px;
 	}
 	
