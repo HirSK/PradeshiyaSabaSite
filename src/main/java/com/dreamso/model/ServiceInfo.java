@@ -7,8 +7,8 @@ import javax.persistence.Id;
 
 @Entity
 
-public class Service {
-		
+public class ServiceInfo {
+	
 	@Id
 	@GeneratedValue
 	private Long serviceID;
@@ -16,6 +16,14 @@ public class Service {
 	private String para1;
 	private String para2;
 	private String images;
+	
+	
+	public Long getServiceID() {
+		return serviceID;
+	}
+	public void setServiceID(Long serviceID) {
+		this.serviceID = serviceID;
+	}
 	
 	public String getImages() {
 		return images;
