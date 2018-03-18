@@ -8,8 +8,8 @@
 </head>
 <body>
 	
-	<h2>${service1.serviceTitle}</h2>
-	<h2>${service1.para1}</h2>
-	<h2>${service1.para2}</h2>
+	<h2>${service.serviceTitle}</h2>
+	<h2>${service.para1}</h2>
+	<h2>${service.para2}</h2>
 </body>
 </html>
