@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+	${serviceList}
 	<h2>${service.serviceTitle}</h2>
 	<h2>${service.para1}</h2>
 	<h2>${service.para2}</h2>

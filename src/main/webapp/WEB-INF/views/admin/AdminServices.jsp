@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
  <jsp:include page="layouts/fixNavbar.jsp"/>
  
 	 <div id="page-wrapper">
@@ -7,11 +11,52 @@
 	                <div class="col-sm-8 col-xs-8 id="content">
 	                    <h1><b>Services</h1>
 	                    <hr>
+	                    <br><br>
+	                    <!-- displaying the list of current services -->						
+						
+						<div class="welcome-content" style="text-align:left">
+							
+							<c:forEach items="${serviceList}" var="service">
+							
+							<button class="accordion" style="padding: 10px 10px 10px 10px; text-align:center;width:450px"><b>${service.serviceTitle}</b></button>
+							<div class="panel">	
+								<c:out value="${service.para1}"></c:out>
+															
+								${service.para1}
+								<br>
+								${service.para2}
+							</div>
+							
+							</c:forEach>	
+							
+							<script>
+	                            var acc = document.getElementsByClassName("accordion");
+	                            var i;
+	
+	                            for (i = 0; i < acc.length; i++) {
+	                                acc[i].addEventListener("click", function() {
+	                                    this.classList.toggle("active");
+	                                    var panel = this.nextElementSibling;
+	                                    if (panel.style.display === "block") {
+	                                        panel.style.display = "none";
+	                                    } else {
+	                                        panel.style.display = "block";
+	                                    }
+	                                });
+	                            }
+							</script>
+	
+						</div>
+				
+						
+						<!-- End of the list of current services -->
 	                </div>
 	                <div class="col-sm-4 col-xs-4 id="content">
 	                	<br>
-	                    <button onclick="document.getElementById('id01').style.display='block'"  class="btn btn-primary">Add New Service</button>
-	
+	                    <button onclick="document.getElementById('id01').style.display='block'"  class="btn btn-primary" style="font-size:17px">Add New Service</button>
+							
+						<!--modal starts-->
+						
 						<div id="id01" class="modal">
 						  
 						 <form class="modal-content animate" action="add_service" method="post"  > 						   
@@ -59,7 +104,9 @@
 						   </form>
 						</div>
 	
+						<!--End of the modal-->
 						
+						<!-- Script for the modal -->
 						<script>
 						// Get the modal
 						var modal = document.getElementById('id01');
@@ -71,7 +118,7 @@
 						    }
 						}
 						</script>
-	
+						<!-- End of the script for the modal -->
 	                    
 	                </div>
 	                

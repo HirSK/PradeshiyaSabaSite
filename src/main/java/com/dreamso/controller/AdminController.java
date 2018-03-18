@@ -16,15 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.dreamso.model.Detail;
 
 @Controller
-public class AdminController {
-	
-	@RequestMapping("/adminservices")	
-	public ModelAndView adminServices(){
-		ModelAndView model = new ModelAndView("admin/AdminServices");
+public class AdminController {	
 		
-		return model;
-	}
-	
 	@RequestMapping("/adminprojects")	
 	public ModelAndView adminProjects(){
 		ModelAndView model = new ModelAndView("admin/AdminProjects");
