@@ -1,5 +1,6 @@
 package com.dreamso.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,21 @@ public class ServiceController {
 	@Autowired
 	ServiceService serviceService;
 	
+	/*@RequestMapping("/adminservices")	
+	public ModelAndView adminServices(){
+		
+		ModelAndView model = new ModelAndView("admin/AdminServices");
+		
+		return model;
+	}*/
 	
+	@RequestMapping("/adminservices")	
+	public String showList(Map<String,Object> map){
+		
+		map.put("serviceList", serviceService.getAll());
+		return "admin/AdminServices";
+		
+	}
 	
   /*@RequestMapping(value = "/add_service",method=RequestMethod.POST)
     public ModelAndView add_service(@RequestParam("serviceTitle") String serviceTitle,@RequestParam("para1") String para1,@RequestParam("para2") String para2,@RequestParam("images") String images){
@@ -38,16 +53,31 @@ public class ServiceController {
     }*/
   
   
-  @RequestMapping(value = "/add_service",method=RequestMethod.POST)
+  /*@RequestMapping(value = "/add_service",method=RequestMethod.POST)
   public ModelAndView submitForm(@ModelAttribute("service") ServiceInfo service)
   {
-	  //System.out.println(service1.getServiceTitle());
+	 
 	  serviceService.create(service);
-	  ModelAndView model = new ModelAndView("admin/success");	  
+	  ModelAndView model = new ModelAndView("admin/AdminServices");	  
 	  //return "redirect:/details"+service.getServiceID();
 	  return model;
      
   }
+  */
+  @RequestMapping(value = "/add_service",method=RequestMethod.POST)
+  public String submitForm(@ModelAttribute("service") ServiceInfo service)
+  {
+	 
+	  serviceService.create(service);
+	  return "redirect:/adminservices";	  
+	  //return "redirect:/details"+service.getServiceID();
+	  //return model;
+     
+  }
+  
+  
+  
+  
   
   /*@RequestMapping(value = "/add_service",method=RequestMethod.POST)
   public String Create(ServiceInfo service, Map<String, Object> map)
