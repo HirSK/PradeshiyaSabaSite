@@ -7,7 +7,7 @@
 				<div class="row">
 					<div class="col-sm-6 ">
 						<div class="copyright-text">
-							<p>CopyRight © 2018 Diuwlapitiya pradeshiya saba <br>powered by <b>Ethynyl-H</b></p><br>
+							<p>CopyRight © 2018 Diuwlapitiya pradeshiya saba <br>powered by <b>DreamSO</b></p><br>
 
 						</div>
 					</div> <!-- End Col -->

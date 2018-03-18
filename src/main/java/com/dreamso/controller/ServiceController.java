@@ -38,33 +38,35 @@ public class ServiceController {
     }*/
   
   
- /* @RequestMapping(value = "/add_service",method=RequestMethod.POST)
-  public ModelAndView submitForm(@ModelAttribute("service1") ServiceInfo service1)
+  @RequestMapping(value = "/add_service",method=RequestMethod.POST)
+  public ModelAndView submitForm(@ModelAttribute("service") ServiceInfo service)
   {
 	  //System.out.println(service1.getServiceTitle());
+	  serviceService.create(service);
 	  ModelAndView model = new ModelAndView("admin/success");	  
-	  return model;	
+	  //return "redirect:/details"+service.getServiceID();
+	  return model;
      
-  }*/
+  }
   
-  @RequestMapping(value = "/add_service",method=RequestMethod.POST)
+  /*@RequestMapping(value = "/add_service",method=RequestMethod.POST)
   public String Create(ServiceInfo service, Map<String, Object> map)
   {
 	  serviceService.create(service);
 	  map.put("service",new ServiceInfo()); 
 	  return "redirect:/details"+service.getServiceID();	
      
-  }
+  }*/
   
   
-  @RequestMapping(value = "/details",method=RequestMethod.POST)
+  /*@RequestMapping(value = "/details",method=RequestMethod.POST)
   public String Details(@PathVariable("serviceID") Long serviceID, Map<String, Object> map)
   {
 	  ServiceInfo service = serviceService.find(serviceID);
 	  map.put("title", service.getServiceTitle());
 	  return "admin/success";
   }
-  
+  */
 	    
 
 }
